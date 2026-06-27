@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freelancer Tarak | #1 Local SEO Agency in Saudi Arabia</title>
+<meta name="description" content="We help local businesses in Riyadh & Jeddah get more calls, traffic, and customers with proven Local SEO strategies.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0f0d'/%3E%3Ctext x='50' y='66' font-size='44' font-family='Arial, sans-serif' font-weight='800' fill='%2334d399' text-anchor='middle'%3EFT%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root{
+    --bg: #0a0f0d;
+    --bg-alt: #0d1310;
+    --bg-card: #111714;
+    --border: #1f2b25;
+    --green: #34d399;
+    --green-dim: #1f5c47;
+    --text: #f3f6f4;
+    --text-dim: #a8b5af;
+    --text-faint: #6b7872;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+
+  a{color:inherit; text-decoration:none;}
+
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  .eyebrow{
+    color:var(--green);
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    display:block;
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(10,15,13,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 24px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:17px;
+  }
+  .logo-badge{
+    width:30px;height:30px;
+    border-radius:8px;
+    background:var(--green);
+    color:#06140e;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;
+    font-weight:800;
+  }
+  .logo span.accent{color:var(--green);}
+  .nav-links{
+    display:flex;
+    gap:24px;
+    font-size:14px;
+    color:var(--text-dim);
+  }
+  .nav-links a:hover{color:var(--text);}
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 22px;
+    border-radius:8px;
+    font-size:14.5px;
+    font-weight:600;
+    cursor:pointer;
+    border:none;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn-primary{
+    background:var(--green);
+    color:#06140e;
+  }
+  .btn-primary:hover{
+    transform:translateY(-1px);
+    box-shadow:0 8px 24px rgba(52,211,153,0.25);
+  }
+  .btn-dark{
+    background:#171f1b;
+    color:var(--text);
+    border:1px solid var(--border);
+  }
+  .btn-dark:hover{background:#1c2620;}
+  .nav-cta{display:none;}
+  @media(min-width:720px){.nav-cta{display:inline-flex;}}
+  .nav-links{display:none;}
+  @media(min-width:1020px){.nav-links{display:flex;}}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:90px 0 70px;
+    text-align:center;
+    position:relative;
+    background:
+      radial-gradient(ellipse 700px 400px at 50% -10%, rgba(52,211,153,0.12), transparent 70%),
+      var(--bg);
+  }
+  .pill{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    padding:8px 18px;
+    border-radius:999px;
+    font-size:13px;
+    color:var(--text-dim);
+    margin-bottom:28px;
+  }
+  .pill .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--green);
+    box-shadow:0 0 8px var(--green);
+  }
+  h1{
+    font-size:clamp(32px, 6vw, 58px);
+    font-weight:800;
+    line-height:1.12;
+    letter-spacing:-1px;
+    max-width:780px;
+    margin:0 auto 22px;
+  }
+  h1 .green{color:var(--green);}
+  .hero-sub{
+    color:var(--text-dim);
+    font-size:17px;
+    max-width:560px;
+    margin:0 auto 36px;
+  }
+  .hero-ctas{
+    display:flex;
+    gap:14px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-bottom:36px;
+  }
+  .hero-ctas .btn{padding:14px 26px; font-size:15px;}
+  .badges{
+    display:flex;
+    gap:28px;
+    justify-content:center;
+    flex-wrap:wrap;
+    color:var(--text-faint);
+    font-size:13.5px;
+    margin-bottom:60px;
+  }
+  .badges span{display:flex; align-items:center; gap:7px;}
+  .stats{
+    display:flex;
+    justify-content:center;
+    gap:70px;
+    flex-wrap:wrap;
+  }
+  .stat-num{
+    font-size:clamp(28px,4vw,40px);
+    font-weight:800;
+    color:var(--green);
+  }
+  .stat-label{
+    color:var(--text-faint);
+    font-size:13.5px;
+    margin-top:4px;
+  }
+
+  /* ---------- SECTION GENERIC ---------- */
+  section{padding:90px 0;}
+  .section-head{
+    text-align:center;
+    max-width:620px;
+    margin:0 auto 56px;
+  }
+  .section-head h2{
+    font-size:clamp(26px,4vw,38px);
+    font-weight:800;
+    letter-spacing:-0.5px;
+    margin-bottom:14px;
+  }
+  .section-head h2 .green{color:var(--green);}
+  .section-head p{color:var(--text-dim); font-size:16px;}
+
+  .bg-alt{background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+  }
+  .card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:28px;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .card:hover{border-color:var(--green-dim); transform:translateY(-3px);}
+  .icon-box{
+    width:42px;height:42px;
+    border-radius:10px;
+    background:rgba(52,211,153,0.12);
+    color:var(--green);
+    display:flex;align-items:center;justify-content:center;
+    font-size:19px;
+    margin-bottom:18px;
+  }
+  .card h3{font-size:17px; margin-bottom:8px; font-weight:700;}
+  .card p{color:var(--text-dim); font-size:14.5px;}
+
+  /* ---------- RESULTS ---------- */
+  .results-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+  }
+  .result-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:26px;
+  }
+  .result-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom:6px;
+  }
+  .result-name{font-weight:700; font-size:15.5px;}
+  .result-loc{color:var(--text-faint); font-size:12.5px;}
+  .result-growth{
+    font-size:30px;
+    font-weight:800;
+    color:var(--green);
+    margin:8px 0 18px;
+  }
+  .result-growth span{font-size:14px; color:var(--text-dim); font-weight:400;}
+  .result-row{
+    display:flex;
+    justify-content:space-between;
+    font-size:13.5px;
+    color:var(--text-dim);
+    padding:9px 0;
+    border-top:1px solid var(--border);
+  }
+  .result-row .vals{color:var(--text-faint);}
+  .result-row .vals .arrow{color:var(--green); font-weight:700;}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+  }
+  .testi-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:26px;
+    position:relative;
+  }
+  .stars{color:var(--green); font-size:14px; margin-bottom:14px;}
+  .testi-card p{color:var(--text-dim); font-size:14.5px; margin-bottom:18px;}
+  .testi-name{font-weight:700; font-size:14.5px;}
+  .testi-role{color:var(--text-faint); font-size:13px;}
+
+  /* ---------- AUDIT FORM ---------- */
+  .audit-wrap{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+  }
+  @media(max-width:860px){.audit-wrap{grid-template-columns:1fr;}}
+  .audit-wrap h2{font-size:clamp(26px,4vw,36px); font-weight:800; line-height:1.2; margin-bottom:16px;}
+  .audit-wrap > div:first-child p{color:var(--text-dim); margin-bottom:22px; font-size:15.5px;}
+  .check-list{list-style:none; display:flex; flex-direction:column; gap:12px;}
+  .check-list li{display:flex; align-items:center; gap:10px; font-size:14.5px; color:var(--text-dim);}
+  .check-list .ck{color:var(--green); font-weight:700;}
+  .form-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:30px;
+  }
+  .form-card input{
+    width:100%;
+    background:#0a0f0d;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:13px 14px;
+    color:var(--text);
+    font-size:14.5px;
+    margin-bottom:14px;
+    outline:none;
+    transition:border-color .15s;
+  }
+  .form-card input:focus{border-color:var(--green);}
+  .form-card .btn-primary{width:100%; justify-content:center; padding:14px;}
+  .form-note{
+    text-align:center;
+    color:var(--text-faint);
+    font-size:12.5px;
+    margin-top:14px;
+  }
+
+  /* ---------- BLOG ---------- */
+  .blog-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+  }
+  .blog-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:24px;
+    transition:border-color .2s, transform .2s;
+  }
+  .blog-card:hover{border-color:var(--green-dim); transform:translateY(-3px);}
+  .tag{
+    display:inline-block;
+    background:rgba(52,211,153,0.12);
+    color:var(--green);
+    font-size:11.5px;
+    font-weight:700;
+    padding:4px 10px;
+    border-radius:6px;
+    margin-bottom:14px;
+  }
+  .blog-card h3{font-size:16.5px; margin-bottom:10px; line-height:1.35;}
+  .blog-card p{color:var(--text-dim); font-size:14px; margin-bottom:16px;}
+  .blog-meta{display:flex; justify-content:space-between; align-items:center; color:var(--text-faint); font-size:12.5px;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+  }
+  .contact-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:24px;
+    text-align:center;
+  }
+  .contact-card .icon-box{margin:0 auto 16px;}
+  .contact-card h4{font-size:15px; margin-bottom:6px;}
+  .contact-card p{color:var(--text-dim); font-size:13.5px; margin-bottom:16px; word-break:break-word;}
+  .contact-card .btn{width:100%; justify-content:center; font-size:13.5px; padding:10px;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    border-top:1px solid var(--border);
+    padding:60px 0 30px;
+    background:var(--bg-alt);
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.6fr 1fr 1fr;
+    gap:40px;
+    margin-bottom:40px;
+  }
+  @media(max-width:700px){.footer-grid{grid-template-columns:1fr;}}
+  .footer-grid h5{font-size:14px; margin-bottom:16px; font-weight:700;}
+  .footer-grid ul{list-style:none; display:flex; flex-direction:column; gap:10px;}
+  .footer-grid ul a{color:var(--text-dim); font-size:14px;}
+  .footer-grid ul a:hover{color:var(--green);}
+  .footer-brand p{color:var(--text-faint); font-size:13.5px; margin-top:14px; max-width:320px;}
+  .footer-bottom{
+    border-top:1px solid var(--border);
+    padding-top:24px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    color:var(--text-faint);
+    font-size:13px;
+  }
+  .footer-bottom a{margin-left:18px; color:var(--text-faint);}
+  .footer-bottom a:hover{color:var(--green);}
+
+  /* ---------- PRICING ---------- */
+  .pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    align-items:stretch;
+  }
+  .price-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    transition:border-color .2s ease, transform .2s ease;
+  }
+  .price-card:hover{transform:translateY(-3px);}
+  .price-card.featured{
+    border-color:var(--green);
+    background:linear-gradient(180deg, rgba(52,211,153,0.07), var(--bg-card) 40%);
+  }
+  .price-badge{
+    position:absolute;
+    top:-12px; right:24px;
+    background:var(--green);
+    color:#06140e;
+    font-size:11.5px;
+    font-weight:700;
+    padding:4px 12px;
+    border-radius:999px;
+  }
+  .price-card h3{font-size:17px; margin-bottom:6px;}
+  .price-card .price-sub{color:var(--text-faint); font-size:13px; margin-bottom:18px;}
+  .price-amount{font-size:34px; font-weight:800; margin-bottom:4px;}
+  .price-amount span{font-size:14px; font-weight:400; color:var(--text-faint);}
+  .price-card ul{list-style:none; margin:22px 0 26px; display:flex; flex-direction:column; gap:11px; flex-grow:1;}
+  .price-card ul li{display:flex; align-items:flex-start; gap:9px; font-size:14px; color:var(--text-dim);}
+  .price-card ul li span{color:var(--green); font-weight:700;}
+  .price-card .btn{width:100%; justify-content:center;}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{
+    max-width:760px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .faq-item{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:12px;
+    overflow:hidden;
+  }
+  .faq-q{
+    width:100%;
+    text-align:left;
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:15.5px;
+    font-weight:600;
+    padding:20px 22px;
+    cursor:pointer;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;
+  }
+  .faq-q .plus{
+    color:var(--green);
+    font-size:18px;
+    font-weight:400;
+    transition:transform .2s ease;
+    flex-shrink:0;
+  }
+  .faq-item.open .faq-q .plus{transform:rotate(45deg);}
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .25s ease;
+  }
+  .faq-a p{
+    padding:0 22px 20px;
+    color:var(--text-dim);
+    font-size:14.5px;
+  }
+
+  /* ---------- BACK TO TOP ---------- */
+  #backToTop{
+    position:fixed;
+    bottom:26px;
+    right:26px;
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:var(--green);
+    color:#06140e;
+    border:none;
+    font-size:18px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.35);
+    z-index:90;
+  }
+  #backToTop.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+  #backToTop:hover{filter:brightness(1.08);}
+
+  @media (prefers-reduced-motion: reduce){
+    #backToTop{transition:opacity .01s, visibility .01s;}
+  }
+
+  /* fade-in on scroll */
+  .fade-up{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity .6s ease, transform .6s ease;
+  }
+  .fade-up.visible{opacity:1; transform:translateY(0);}
+
+  @media (prefers-reduced-motion: reduce){
+    .fade-up{transition:none; opacity:1; transform:none;}
+    html{scroll-behavior:auto;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">
+      <div class="logo-badge">FT</div>
+      <span>Freelancer <span class="accent">Tarak</span></span>
+    </div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#results">Results</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#audit" class="btn btn-primary nav-cta">Get Free SEO Audit</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="pill"><span class="dot"></span> Limited Spots — Only 5 Free Audits Left This Month</div>
+    <h1>Rank Your Business <span class="green">#1 on</span><br>Google Maps 🚀</h1>
+    <p class="hero-sub">We help local businesses in Riyadh & Jeddah get more calls, traffic, and customers with proven Local SEO strategies.</p>
+    <div class="hero-ctas">
+      <a href="#audit" class="btn btn-primary">Get Free SEO Audit →</a>
+      <a href="#results" class="btn btn-dark">See Our Results</a>
+    </div>
+    <div class="badges">
+      <span>⭐ Google Partner</span>
+      <span>🛡️ Certified SEO Expert</span>
+      <span>📈 5-Star Rated</span>
+    </div>
+    <div class="stats" id="stats">
+      <div><div class="stat-num" data-target="500" data-suffix="+">0</div><div class="stat-label">Businesses Ranked</div></div>
+      <div><div class="stat-num" data-target="3" data-suffix="x">0</div><div class="stat-label">Average Traffic Growth</div></div>
+      <div><div class="stat-num" data-target="98" data-suffix="%">0</div><div class="stat-label">Client Retention</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="bg-alt">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Our Services</span>
+      <h2>Everything You Need to <span class="green">Dominate Local Search</span></h2>
+      <p>Comprehensive Local SEO solutions tailored for businesses in Saudi Arabia. We handle everything so you can focus on serving your customers.</p>
+    </div>
+    <div class="services-grid">
+      <div class="card fade-up">
+        <div class="icon-box">📍</div>
+        <h3>Google Business Profile Optimization</h3>
+        <p>We optimize your GBP listing to maximize visibility in local search and Google Maps. Get found by customers searching for your services.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🔍</div>
+        <h3>Local SEO Ranking</h3>
+        <p>Dominate the local 3-pack and organic results. Our proven strategies push your business to the top of search results in your area.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">📊</div>
+        <h3>Citation Building</h3>
+        <p>Consistent NAP citations across 100+ directories to build authority and trust. Boost your local ranking signals.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">⭐</div>
+        <h3>Review Management</h3>
+        <p>Generate more 5-star reviews and manage your online reputation. Reviews are the #1 trust factor for local customers.</p>
+      </div>
+      <div class="card fade-up">
+        <div class="icon-box">🌐</div>
+        <h3>Website SEO Optimization</h3>
+        <p>Technical SEO, on-page optimization, and content strategy to turn your website into a lead-generating machine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Pricing</span>
+      <h2>Simple, <span class="green">Transparent Pricing</span></h2>
+      <p>Choose the plan that fits your business. No hidden fees, cancel anytime.</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card fade-up">
+        <h3>Starter</h3>
+        <div class="price-sub">For new or single-location businesses</div>
+        <div class="price-amount">SAR 999 <span>/ month</span></div>
+        <ul>
+          <li><span>✓</span> Google Business Profile optimization</li>
+          <li><span>✓</span> Local SEO ranking for 5 keywords</li>
+          <li><span>✓</span> Monthly performance report</li>
+          <li><span>✓</span> Basic citation building</li>
+        </ul>
+        <a href="#audit" class="btn btn-dark">Get Started</a>
+      </div>
+      <div class="price-card featured fade-up">
+        <div class="price-badge">Most Popular</div>
+        <h3>Growth</h3>
+        <div class="price-sub">For businesses ready to dominate local search</div>
+        <div class="price-amount">SAR 1,999 <span>/ month</span></div>
+        <ul>
+          <li><span>✓</span> Everything in Starter</li>
+          <li><span>✓</span> Local SEO ranking for 20 keywords</li>
+          <li><span>✓</span> Review generation & management</li>
+          <li><span>✓</span> Citation building across 100+ directories</li>
+          <li><span>✓</span> Website SEO audit & fixes</li>
+        </ul>
+        <a href="#audit" class="btn btn-primary">Get Started</a>
+      </div>
+      <div class="price-card fade-up">
+        <h3>Enterprise</h3>
+        <div class="price-sub">For multi-location brands</div>
+        <div class="price-amount">Custom</div>
+        <ul>
+          <li><span>✓</span> Everything in Growth</li>
+          <li><span>✓</span> Multi-location GBP management</li>
+          <li><span>✓</span> Dedicated account manager</li>
+          <li><span>✓</span> Custom reporting & strategy calls</li>
+        </ul>
+        <a href="#contact" class="btn btn-dark">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="results">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Proven Results</span>
+      <h2>Real Results for <span class="green">Real Businesses</span></h2>
+      <p>Don't just take our word for it — see the numbers that speak for themselves.</p>
+    </div>
+    <div class="results-grid">
+      <div class="result-card fade-up">
+        <div class="result-top">
+          <span class="result-name">Al-Faisal Restaurant</span>
+          <span class="result-loc">Riyadh</span>
+        </div>
+        <div class="result-growth">+518% <span>Traffic Growth In 90 Days</span></div>
+        <div class="result-row">📈 Google Maps Ranking <span class="vals">#47 <span class="arrow">→</span> #1</span></div>
+        <div class="result-row">📞 Monthly Calls <span class="vals">12 <span class="arrow">→</span> 89</span></div>
+        <div class="result-row">👥 Website Visitors <span class="vals">340 <span class="arrow">→</span> 2,100</span></div>
+      </div>
+      <div class="result-card fade-up">
+        <div class="result-top">
+          <span class="result-name">Jeddah Auto Care</span>
+          <span class="result-loc">Jeddah</span>
+        </div>
+        <div class="result-growth">+468% <span>Traffic Growth In 60 Days</span></div>
+        <div class="result-row">📈 Google Maps Ranking <span class="vals">#32 <span class="arrow">→</span> #2</span></div>
+        <div class="result-row">📞 Monthly Calls <span class="vals">18 <span class="arrow">→</span> 142</span></div>
+        <div class="result-row">👥 Website Visitors <span class="vals">500 <span class="arrow">→</span> 4,400</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="bg-alt">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Testimonials</span>
+      <h2>Trusted by <span class="green">500+ Businesses</span></h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"Freelancer Tarak transformed our online presence. We went from invisible on Google Maps to #1 in our area. Our phone doesn't stop ringing!"</p>
+        <div class="testi-name">Ahmed Al-Rashid</div>
+        <div class="testi-role">Al-Rashid Electronics · Riyadh</div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"Within 2 months, our bookings increased by 300%. The team is professional, responsive, and truly understands local SEO in Saudi Arabia."</p>
+        <div class="testi-name">Sara Al-Fahad</div>
+        <div class="testi-role">Bloom Beauty Salon · Jeddah</div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"Best investment we've made for our business. The ROI has been incredible — we're getting 5x more leads than before working together."</p>
+        <div class="testi-name">Mohammed Al-Harbi</div>
+        <div class="testi-role">Harbi Auto Services · Riyadh</div>
+      </div>
+      <div class="testi-card fade-up">
+        <div class="stars">★★★★★</div>
+        <p>"They delivered exactly what they promised. Our restaurant now appears at the top of Google Maps and our daily walk-ins doubled."</p>
+        <div class="testi-name">Fatima Al-Dosari</div>
+        <div class="testi-role">Fresh Bites Restaurant · Jeddah</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="bg-alt">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently Asked <span class="green">Questions</span></h2>
+      <p>Everything you need to know before getting started.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-up">
+        <button class="faq-q" type="button">How long until I see results? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Most clients start seeing measurable improvements in Google Maps rankings and traffic within 30–60 days, with significant growth by month 3.</p></div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-q" type="button">Do you work with businesses outside Riyadh & Jeddah? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Yes. While we specialize in Riyadh and Jeddah, we work with local businesses across Saudi Arabia. Reach out and we'll confirm coverage for your area.</p></div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-q" type="button">Is there a contract or can I cancel anytime? <span class="plus">+</span></button>
+        <div class="faq-a"><p>All plans are month-to-month with no long-term contract. You can cancel anytime, though SEO is a long-term investment that compounds over time.</p></div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-q" type="button">What's included in the free SEO audit? <span class="plus">+</span></button>
+        <div class="faq-a"><p>You'll get a full website SEO analysis, a Google Maps ranking report for your key terms, and a personalized action plan — delivered within 24 hours.</p></div>
+      </div>
+      <div class="faq-item fade-up">
+        <button class="faq-q" type="button">Which industries do you work with? <span class="plus">+</span></button>
+        <div class="faq-a"><p>Restaurants, salons, auto services, clinics, retail, and most other local service businesses that rely on nearby customers finding them on Google.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="audit">
+  <div class="container">
+    <div class="audit-wrap">
+      <div class="fade-up">
+        <span class="eyebrow">Free SEO Audit</span>
+        <h2>Get Your <span style="color:var(--green)">Free SEO</span> Report Today</h2>
+        <p>Discover why your competitors are ranking higher and get a personalized action plan to dominate local search in your area.</p>
+        <ul class="check-list">
+          <li><span class="ck">✓</span> Full website SEO analysis</li>
+          <li><span class="ck">✓</span> Google Maps ranking report</li>
+          <li><span class="ck">✓</span> Results delivered in 24 hours</li>
+        </ul>
+      </div>
+      <div class="form-card fade-up">
+        <form onsubmit="event.preventDefault(); alert('Thanks! We will reach out within 24 hours.');">
+          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Business Name" required>
+          <input type="tel" placeholder="Phone Number" required>
+          <input type="url" placeholder="Website URL">
+          <button type="submit" class="btn btn-primary">Get Your Free SEO Report →</button>
+        </form>
+        <div class="form-note">🔒 100% Free. No credit card required. No spam.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="bg-alt">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Blog</span>
+      <h2>Latest <span class="green">SEO Insights</span></h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card fade-up">
+        <span class="tag">Local SEO</span>
+        <h3>How to Rank #1 on Google Maps in Saudi Arabia (2026 Guide)</h3>
+        <p>The complete step-by-step guide to dominating local search results in Riyadh and Jeddah.</p>
+        <div class="blog-meta"><span>⏱ 8 min read</span><span>↗</span></div>
+      </div>
+      <div class="blog-card fade-up">
+        <span class="tag">GBP</span>
+        <h3>5 Google Business Profile Mistakes Killing Your Rankings</h3>
+        <p>Most businesses make these critical GBP errors. Here's how to fix them and start getting more customers.</p>
+        <div class="blog-meta"><span>⏱ 5 min read</span><span>↗</span></div>
+      </div>
+      <div class="blog-card fade-up">
+        <span class="tag">Reviews</span>
+        <h3>Why Reviews Are the #1 Factor for Local SEO Success</h3>
+        <p>Learn how to generate more 5-star reviews and leverage them for higher search rankings.</p>
+        <div class="blog-meta"><span>⏱ 6 min read</span><span>↗</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head fade-up">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Ready to <span class="green">Get Started?</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card fade-up">
+        <div class="icon-box">💬</div>
+        <h4>WhatsApp</h4>
+        <p>Chat with us instantly</p>
+        <a href="https://wa.me/966551991927" class="btn btn-dark">Start Chat</a>
+      </div>
+      <div class="contact-card fade-up">
+        <div class="icon-box">📞</div>
+        <h4>Call Us</h4>
+        <p>+966 55 199 1927</p>
+        <a href="tel:+966551991927" class="btn btn-dark">Call Now</a>
+      </div>
+      <div class="contact-card fade-up">
+        <div class="icon-box">✉️</div>
+        <h4>Email</h4>
+        <p>tarakhossain.info@gmail.com</p>
+        <a href="mailto:tarakhossain.info@gmail.com" class="btn btn-dark">Send Email</a>
+      </div>
+      <div class="contact-card fade-up">
+        <div class="icon-box">📍</div>
+        <h4>Location</h4>
+        <p>Riyadh & Jeddah, Saudi Arabia</p>
+        <a href="https://maps.google.com/?q=Riyadh,Saudi Arabia" class="btn btn-dark">Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-badge">FT</div>
+          <span>Freelancer <span class="accent">Tarak</span></span>
+        </div>
+        <p>The #1 Local SEO specialist in Saudi Arabia. We help businesses in Riyadh and Jeddah dominate Google Maps and local search results.</p>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <ul>
+          <li><a href="#services">Google Business Profile</a></li>
+          <li><a href="#services">Local SEO Ranking</a></li>
+          <li><a href="#services">Citation Building</a></li>
+          <li><a href="#services">Review Management</a></li>
+          <li><a href="#services">Website SEO</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Freelancer Tarak. All rights reserved.</span>
+      <span>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" aria-label="Back to top">↑</button>
+
+<script>
+  // Fade-up on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.12});
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Stats counter animation
+  const statEls = document.querySelectorAll('.stat-num');
+  const animateCount = (el) => {
+    const target = parseFloat(el.getAttribute('data-target'));
+    const suffix = el.getAttribute('data-suffix') || '';
+    const duration = 1400;
+    const start = performance.now();
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * eased);
+      el.textContent = current + suffix;
+      if(progress < 1){
+        requestAnimationFrame(step);
+      } else {
+        el.textContent = target + suffix;
+      }
+    };
+    requestAnimationFrame(step);
+  };
+  const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        statEls.forEach(animateCount);
+        statsObserver.disconnect();
+      }
+    });
+  }, {threshold: 0.4});
+  const statsBlock = document.getElementById('stats');
+  if(statsBlock) statsObserver.observe(statsBlock);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const btn = item.querySelector('.faq-q');
+    const answer = item.querySelector('.faq-a');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(openItem => {
+        if(openItem !== item){
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      if(isOpen){
+        item.classList.remove('open');
+        answer.style.maxHeight = null;
+      } else {
+        item.classList.add('open');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+      }
+    });
+  });
+
+  // Back to top button
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 500){
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+</script>
+
+</body>
+</html>
